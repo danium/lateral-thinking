@@ -38,15 +38,19 @@ Turn each assumption into its strongest *plausible opposite* — not a strawman.
 
 For each flip, ask the load-bearing question: **"In what market, segment, or era is this flip TRUE? Who profits from it today?"** Name a real place it holds — a customer type, an industry, a historical moment, an existing product. If you cannot name one honestly, the flip is dead. Say so and move on. Do not manufacture a fake "where."
 
-### Step 5: Develop the survivors
+### Step 5: Spec-kill (mandatory)
 
-Take the 2–3 flips that had a live answer in Step 4 and develop them into concrete directions. What would the approach look like if you built it around the flipped belief? Where the flip already works for someone else, borrow the mechanism.
+Before ranking, check each candidate against *why* the rule it breaks exists. Look in the target's own record — spec sections like `Does NOT provide` / `Verdict`, proofs, invariants, model-checked properties. Reason is a proven invariant or a conclusion derived from one → the idea is **dead**: mark it `spec-kill: <invariant>` and keep it visible. Reason is habit, convention, or an untested assumption → the idea lives. No record to check (a fresh product idea) → say so in one line and move on. Flip assumptions, not conclusions: a limit the record derives from a proof is a theorem, and flipping it flips the theorem.
 
-### Step 6: Meta-pattern scan
+### Step 6: Develop the survivors
+
+Take the 2–3 flips that survived Steps 4–5 and develop them into concrete directions. What would the approach look like if you built it around the flipped belief? Where the flip already works for someone else, borrow the mechanism.
+
+### Step 7: Meta-pattern scan
 
 Scan across the flips that survived. Is there a structural insight — one belief that several assumptions all secretly depended on, one axis where the whole approach is fragile? State it explicitly. This cross-flip observation is often the real finding, larger than any single flipped assumption.
 
-### Step 7: Honest ranking
+### Step 8: Honest ranking
 
 Rank the surviving directions, weakest called out as weak and why. Mark the dead flips as dead so the user sees the whole map. Then offer the next move — extract more assumptions, go deeper on one direction, switch technique, or stop — and never push the user to commit. The technique is divergent; convergence belongs to the user.
 

@@ -49,7 +49,11 @@ Then shape any live thread into a real idea. Not every provocation reaches one �
 
 Scan across the ideas that landed for a structural property that kept recurring — "every provocation that paid off removed a step rather than adding one", "the strong ones all shifted work from the user onto the system", "three of them turned a cost into a signal". State the structural insight explicitly. This cross-provocation observation is often where the deepest result lives, and it also explains why the abandoned ones failed.
 
-### Step 6: Honest ranking
+### Step 6: Spec-kill (mandatory)
+
+Before ranking, check each candidate against *why* the rule it breaks exists. Look in the target's own record — spec sections like `Does NOT provide` / `Verdict`, proofs, invariants, model-checked properties. Reason is a proven invariant or a conclusion derived from one → the idea is **dead**: mark it `spec-kill: <invariant>` and keep it visible. Reason is habit, convention, or an untested assumption → the idea lives. No record to check (a fresh product idea) → say so in one line and move on. A provocation that rewords a guarantee ("Po: the certificate is an option") still hits the invariant that guarantee protects.
+
+### Step 7: Honest ranking
 
 Pick the 2–4 sharpest directions and rank them. Say which feel weak, and why. Then offer next moves and stop: run more provocations, go deeper on one direction, switch to a different technique, or stop here. Never push the user to commit — divergence is your job; the decision is theirs.
 
